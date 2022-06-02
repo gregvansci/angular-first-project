@@ -1,7 +1,36 @@
 main {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.game-board {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-gap: 0px;
+}
+
+.game-info {
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: 300px 300px;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center;
+}
+.game-info button {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.75rem;
+  max-width: 400px;
+}
+
+.game-info-text {
+  padding-top: 100px;
 }
 
 app-square {
